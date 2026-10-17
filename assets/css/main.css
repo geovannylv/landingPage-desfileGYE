@@ -1413,6 +1413,10 @@ input, select, textarea {
 
 		.quote-list li img {
 			float: left;
+			width: 68px;
+			height: 68px;
+			border-radius: 50%;
+			object-fit: cover;
 		}
 
 		.quote-list li p {
@@ -1454,6 +1458,9 @@ input, select, textarea {
 		.feature-image img {
 			display: block;
 			width: 100%;
+			height: 200px;
+			object-fit: cover;
+			border-radius: 4px;
 		}
 
 	.bordered-feature-image {
@@ -1468,6 +1475,8 @@ input, select, textarea {
 		.bordered-feature-image img {
 			display: block;
 			width: 100%;
+			height: 175px;
+			object-fit: cover;
 		}
 
 	.button-large {
@@ -1776,73 +1785,6 @@ input, select, textarea {
 
 		.carro-features strong {
 			color: #1e293b;
-		}
-
-/* Galería Fotográfica */
-
-	.galeria-section {
-		background: #1e293b url("images/bg02.jpg");
-		border-top: solid 1px #334155;
-		border-bottom: solid 1px #0f172a;
-		padding: 55px 0 60px 0;
-		color: #e2e8f0;
-	}
-
-	.gallery-item {
-		background: #0f172a;
-		border-radius: 8px;
-		overflow: hidden;
-		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
-		transition: transform 0.25s ease, box-shadow 0.25s ease;
-		margin-bottom: 25px;
-		height: calc(100% - 25px);
-		display: flex;
-		flex-direction: column;
-		border: solid 1px rgba(255, 255, 255, 0.08);
-	}
-
-		.gallery-item:hover {
-			transform: translateY(-4px);
-			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
-			border-color: rgba(56, 189, 248, 0.4);
-		}
-
-	.gallery-img-container {
-		width: 100%;
-		height: 220px;
-		overflow: hidden;
-		background: #000;
-	}
-
-		.gallery-img-container img {
-			width: 100%;
-			height: 100%;
-			object-fit: cover;
-			display: block;
-			transition: transform 0.4s ease;
-		}
-
-		.gallery-item:hover .gallery-img-container img {
-			transform: scale(1.06);
-		}
-
-	.gallery-caption {
-		padding: 16px;
-		flex-grow: 1;
-	}
-
-		.gallery-caption h4 {
-			font-size: 1.25em;
-			color: #f8fafc;
-			margin-bottom: 0.35em;
-			line-height: 1.3em;
-		}
-
-		.gallery-caption p {
-			font-size: 1.05em;
-			line-height: 1.45em;
-			color: #94a3b8;
-			margin: 0;
 		}
 
 /* Content */
