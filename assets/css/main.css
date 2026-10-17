@@ -1659,6 +1659,192 @@ input, select, textarea {
 			color: #fff;
 		}
 
+	.section-intro.light h2 {
+		color: #1e293b !important;
+	}
+
+	.section-intro.light p {
+		color: #475569 !important;
+	}
+
+/* Carros Alegóricos */
+
+	.carros-section {
+		background: #f1f5f9;
+		border-bottom: solid 1px #cbd5e1;
+		padding: 55px 0 60px 0;
+	}
+
+	.carro-card {
+		background: #ffffff;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+		transition: transform 0.25s ease, box-shadow 0.25s ease;
+		margin-bottom: 25px;
+		display: flex;
+		flex-direction: column;
+		height: calc(100% - 25px);
+	}
+
+		.carro-card:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.12), 0 4px 6px -2px rgba(0, 0, 0, 0.07);
+		}
+
+	.carro-image-wrapper {
+		position: relative;
+		width: 100%;
+		height: 300px;
+		overflow: hidden;
+		background: #0f172a;
+	}
+
+		.carro-image-wrapper img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			transition: transform 0.4s ease;
+		}
+
+		.carro-card:hover .carro-image-wrapper img {
+			transform: scale(1.04);
+		}
+
+	.badge-tag {
+		position: absolute;
+		top: 15px;
+		right: 15px;
+		background: #0284c7;
+		color: #ffffff;
+		padding: 4px 12px;
+		border-radius: 20px;
+		font-size: 0.85em;
+		font-weight: 400;
+		letter-spacing: 0.5px;
+		text-transform: uppercase;
+		box-shadow: 0 2px 4px rgba(0, 0, 0, 0.25);
+	}
+
+	.carro-content {
+		padding: 28px 24px 24px 24px;
+		flex-grow: 1;
+		display: flex;
+		flex-direction: column;
+	}
+
+		.carro-content h3 {
+			font-size: 1.6em;
+			color: #0f172a;
+			margin-bottom: 0.5em;
+			line-height: 1.3em;
+		}
+
+		.carro-content p {
+			font-size: 1.15em;
+			line-height: 1.6em;
+			color: #334155;
+			margin-bottom: 1.25em;
+		}
+
+	.carro-features {
+		list-style: none;
+		margin: 0;
+		padding: 0;
+		border-top: solid 1px #e2e8f0;
+		padding-top: 1em;
+	}
+
+		.carro-features li {
+			font-size: 1.05em;
+			line-height: 1.55em;
+			color: #475569;
+			margin-bottom: 0.4em;
+			padding-left: 1.2em;
+			position: relative;
+		}
+
+			.carro-features li:before {
+				content: "•";
+				color: #0284c7;
+				position: absolute;
+				left: 0;
+				font-size: 1.3em;
+				line-height: 1em;
+			}
+
+		.carro-features strong {
+			color: #1e293b;
+		}
+
+/* Galería Fotográfica */
+
+	.galeria-section {
+		background: #1e293b url("images/bg02.jpg");
+		border-top: solid 1px #334155;
+		border-bottom: solid 1px #0f172a;
+		padding: 55px 0 60px 0;
+		color: #e2e8f0;
+	}
+
+	.gallery-item {
+		background: #0f172a;
+		border-radius: 8px;
+		overflow: hidden;
+		box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.3);
+		transition: transform 0.25s ease, box-shadow 0.25s ease;
+		margin-bottom: 25px;
+		height: calc(100% - 25px);
+		display: flex;
+		flex-direction: column;
+		border: solid 1px rgba(255, 255, 255, 0.08);
+	}
+
+		.gallery-item:hover {
+			transform: translateY(-4px);
+			box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.4);
+			border-color: rgba(56, 189, 248, 0.4);
+		}
+
+	.gallery-img-container {
+		width: 100%;
+		height: 220px;
+		overflow: hidden;
+		background: #000;
+	}
+
+		.gallery-img-container img {
+			width: 100%;
+			height: 100%;
+			object-fit: cover;
+			display: block;
+			transition: transform 0.4s ease;
+		}
+
+		.gallery-item:hover .gallery-img-container img {
+			transform: scale(1.06);
+		}
+
+	.gallery-caption {
+		padding: 16px;
+		flex-grow: 1;
+	}
+
+		.gallery-caption h4 {
+			font-size: 1.25em;
+			color: #f8fafc;
+			margin-bottom: 0.35em;
+			line-height: 1.3em;
+		}
+
+		.gallery-caption p {
+			font-size: 1.05em;
+			line-height: 1.45em;
+			color: #94a3b8;
+			margin: 0;
+		}
+
 /* Content */
 
 	#content {
