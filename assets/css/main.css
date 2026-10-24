@@ -1528,15 +1528,16 @@ section:last-child,
 }
 
 .check-list li {
-	padding: 0.7em 0 0.7em 45px;
+	padding: 0.7em 0 0.7em 38px;
 	font-size: 1.2em;
-	background: url("images/icon-checkmark.png") 0px 1.05em no-repeat;
+	background: url("images/icon-checkmark-celeste.svg") 0px 0.95em no-repeat;
+	background-size: 22px 22px;
 }
 
 .check-list li:first-child {
 	padding-top: 0 !important;
 	border-top: 0 !important;
-	background-position: 0 0.3em;
+	background-position: 0 0.25em;
 }
 
 .check-list li:last-child {
