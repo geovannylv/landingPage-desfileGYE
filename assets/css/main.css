@@ -1943,8 +1943,11 @@ section:last-child,
 }
 
 #content section {
-	background: #fff;
-	padding: 40px 30px 45px 30px;
+	background: #f0f9ff;
+	border: 1px solid #bae6fd;
+	border-top: 3px solid #0284c7;
+	border-radius: 8px;
+	padding: 24px 22px;
 	box-shadow: 2px 2px 2px 1px rgba(128, 128, 128, 0.1);
 	margin: 0 0 25px 0;
 }
@@ -1956,7 +1959,7 @@ section:last-child,
 }
 
 #content h3 {
-	color: #96a9b5;
+	color: #0284c7;
 	font-size: 1.25em;
 }
 
@@ -1983,8 +1986,8 @@ section:last-child,
 /* Footer */
 
 #footer {
-	padding: 45px 0 45px 0;
-	text-shadow: 1px 1px 1px white;
+	border-top: 2px solid #38bdf8;
+	padding: 20px 0 15px 0;
 	color: #546b76;
 	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
@@ -1992,11 +1995,19 @@ section:last-child,
 #footer h2 {
 	font-size: 1.25em;
 	color: #212f35;
-	margin: 0 0 1em 0;
+	margin: 0 0 0.5em 0;
+}
+
+#footer p {
+	margin: 0 0 0.75em 0;
 }
 
 #footer a {
 	color: #546b76;
+}
+
+#footer a:hover {
+	color: #0284c7;
 }
 
 #footer .quote-list li {
@@ -2020,7 +2031,7 @@ section:last-child,
 	border-top: solid 1px #b5bec3;
 	box-shadow: inset 0px 1px 0px 0px #e0e4e7;
 	text-align: center;
-	padding: 45px 0 80px 0;
+	padding: 12px 0;
 	color: #8d9ca3;
 	text-shadow: 1px 1px 0px rgba(255, 255, 255, 0.5);
 }
@@ -2331,7 +2342,7 @@ section:last-child,
 	/* Content */
 
 	#content section {
-		padding: 30px 20px;
+		padding: 20px 16px;
 	}
 
 	#content h2 {
@@ -2355,7 +2366,7 @@ section:last-child,
 	/* Copyright */
 
 	#copyright {
-		padding: 20px 30px;
+		padding: 12px 20px;
 	}
 
 }
