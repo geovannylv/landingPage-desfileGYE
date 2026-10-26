@@ -1616,6 +1616,24 @@ section:last-child,
 
 /* Barra de Documentación */
 
+.skip-link {
+	position: absolute;
+	left: 1rem;
+	top: -5rem;
+	z-index: 100;
+	padding: 0.7rem 1rem;
+	border-radius: 0 0 0.35rem 0.35rem;
+	background: #ffffff;
+	color: #075985;
+	font-weight: 700;
+	text-decoration: none;
+	box-shadow: 0 2px 8px rgba(0, 0, 0, 0.22);
+}
+
+.skip-link:focus {
+	top: 0;
+}
+
 .top-doc-bar {
 	position: relative;
 	z-index: 20;
@@ -1942,7 +1960,7 @@ section:last-child,
 	padding: 45px 0 45px 0;
 }
 
-#content section {
+#content article {
 	background: #f0f9ff;
 	border: 1px solid #bae6fd;
 	border-top: 3px solid #0284c7;
@@ -2341,7 +2359,7 @@ section:last-child,
 
 	/* Content */
 
-	#content section {
+	#content article {
 		padding: 20px 16px;
 	}
 
