@@ -395,27 +395,57 @@
 										</select>
 									</div>
 									<div class="field-group">
-										<label for="aspecto-principal">¿Qué fue lo que más valoraste?</label>
-										<select id="aspecto-principal" name="aspecto-principal" required>
-											<option value="">Elige un aspecto</option>
-											<option value="carrozas">Carrozas y creatividad</option>
-											<option value="musica">Música y comparsas</option>
-											<option value="familia">Ambiente familiar</option>
-											<option value="civismo">Identidad y civismo</option>
+										<label for="enteraste-desfile">¿Cómo te enteraste del desfile?</label>
+										<select id="enteraste-desfile" name="enteraste-desfile" required>
+											<option value="">Selecciona una opción</option>
+											<option value="redes-sociales">Redes sociales (Instagram, TikTok, Facebook)</option>
+											<option value="television-radio">Televisión o radio</option>
+											<option value="amigos-familiares">Amigos o familiares</option>
+											<option value="prensa-noticias">Prensa o noticias locales</option>
+											<option value="publicidad-carteles">Carteles o afiches en la ciudad</option>
+											<option value="casualidad">Pasaba por el lugar / Casualidad</option>
+											<option value="otro">Otro medio</option>
 										</select>
 									</div>
 								</div>
 
+								<div class="field-group">
+									<label for="aspecto-principal">¿Qué fue lo que más valoraste?</label>
+									<select id="aspecto-principal" name="aspecto-principal" required>
+										<option value="">Elige un aspecto</option>
+										<option value="carrozas">Carrozas y creatividad</option>
+										<option value="musica">Música y comparsas</option>
+										<option value="familia">Ambiente familiar</option>
+										<option value="civismo">Identidad y civismo</option>
+									</select>
+								</div>
+
 								<div class="field-group radio-group">
 									<span class="field-label">¿Habías asistido antes al desfile? <span aria-hidden="true">*</span></span>
-									<label><input type="radio" name="visita-previa" value="si" required> Sí, he asistido antes</label>
-									<label><input type="radio" name="visita-previa" value="no"> No, fue mi primera vez</label>
+									<div class="radio-options">
+										<label class="radio-option">
+											<input type="radio" name="visita-previa" value="si" required>
+											<span>Sí, he asistido antes</span>
+										</label>
+										<label class="radio-option">
+											<input type="radio" name="visita-previa" value="no">
+											<span>No, fue mi primera vez</span>
+										</label>
+									</div>
 								</div>
 
 								<div class="field-group rating-group">
 									<label for="calificacion">¿Cómo calificarías la experiencia? <output id="valor-calificacion" for="calificacion">4</output>/5</label>
-									<input id="calificacion" name="calificacion" type="range" min="1" max="5" value="4">
-									<div class="range-labels" aria-hidden="true"><span>Por mejorar</span><span>Excelente</span></div>
+									<div class="range-wrapper">
+										<input id="calificacion" name="calificacion" type="range" min="1" max="5" value="4">
+										<div class="rating-markers" aria-hidden="true">
+											<span class="marker"><span class="marker-num">1</span><span class="marker-text">Por mejorar</span></span>
+											<span class="marker"><span class="marker-num">2</span><span class="marker-text">Regular</span></span>
+											<span class="marker"><span class="marker-num">3</span><span class="marker-text">Buena</span></span>
+											<span class="marker"><span class="marker-num">4</span><span class="marker-text">Muy buena</span></span>
+											<span class="marker"><span class="marker-num">5</span><span class="marker-text">Excelente</span></span>
+										</div>
+									</div>
 								</div>
 
 								<div class="field-group">
@@ -424,7 +454,7 @@
 										placeholder="Escribe una sugerencia con al menos 12 caracteres."></textarea>
 								</div>
 
-								<label class="consent-label"><input type="checkbox" name="consentimiento" required> Entiendo que mi respuesta será usada solo con fines académicos y de forma anónima.</label>
+								<label class="consent-label"><input type="checkbox" name="consentimiento" required> <span>Entiendo que mi respuesta será usada solo con fines académicos y de forma anónima.</span></label>
 								<button type="submit" class="survey-button">Enviar mi opinión <span aria-hidden="true">→</span></button>
 								<p class="required-note"><span aria-hidden="true">*</span> Campos obligatorios</p>
 							</fieldset>

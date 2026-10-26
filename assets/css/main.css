@@ -2203,28 +2203,70 @@ section:last-child,
 	border-color: #0284c7;
 }
 
+.survey-form input[type="radio"],
+.survey-form input[type="checkbox"] {
+	-webkit-appearance: auto;
+	-moz-appearance: auto;
+	appearance: auto;
+	accent-color: #0284c7;
+	cursor: pointer;
+}
+
 .radio-group {
-	display: flex;
-	flex-wrap: wrap;
-	gap: 0.6rem 1.15rem;
+	margin-bottom: 1.15rem;
 }
 
 .radio-group .field-label {
+	display: block;
 	width: 100%;
-	margin-bottom: 0;
+	margin-bottom: 0.5rem;
+	font-weight: 700;
+	color: #334155;
 }
 
-.radio-group label,
-.consent-label {
-	margin: 0;
+.radio-options {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.75rem 1rem;
+}
+
+.radio-option {
+	display: inline-flex;
+	align-items: center;
+	gap: 0.55rem;
+	padding: 0.6rem 1rem;
+	border: 1.5px solid #cbd5e1;
+	border-radius: 8px;
+	background: #f8fafc;
+	color: #334155;
 	font-weight: 400;
-	color: #475569;
+	cursor: pointer;
+	transition: all 0.2s ease;
+	user-select: none;
 }
 
-.radio-group input,
-.consent-label input {
-	margin-right: 0.35rem;
-	accent-color: #0284c7;
+.radio-option:hover {
+	border-color: #0284c7;
+	background: #f0f9ff;
+	color: #0369a1;
+}
+
+.radio-option:has(input:checked) {
+	border-color: #0284c7;
+	background: #e0f2fe;
+	color: #0369a1;
+	font-weight: 600;
+	box-shadow: 0 0 0 1px #0284c7;
+}
+
+.radio-option input[type="radio"] {
+	width: 1.15rem;
+	height: 1.15rem;
+	margin: 0;
+}
+
+.rating-group {
+	margin-bottom: 1.25rem;
 }
 
 .rating-group output {
@@ -2232,27 +2274,129 @@ section:last-child,
 	min-width: 1.45em;
 	border-radius: 999px;
 	background: #e0f2fe;
-	padding: 0.1rem 0.35rem;
+	padding: 0.1rem 0.4rem;
 	text-align: center;
 	color: #0369a1;
+	font-weight: 700;
+}
+
+.range-wrapper {
+	position: relative;
+	padding: 0.35rem 0.25rem 0;
 }
 
 .rating-group input[type="range"] {
+	-webkit-appearance: none;
+	-moz-appearance: none;
+	appearance: none;
 	width: 100%;
-	accent-color: #0284c7;
+	height: 8px;
+	border-radius: 999px;
+	background: #cbd5e1;
+	border: 1px solid #94a3b8;
+	outline: none;
+	margin: 0.5rem 0 0.75rem;
+	cursor: pointer;
+	display: block;
 }
 
-.range-labels {
+.rating-group input[type="range"]::-webkit-slider-runnable-track {
+	height: 8px;
+	border-radius: 999px;
+	background: #cbd5e1;
+}
+
+.rating-group input[type="range"]::-webkit-slider-thumb {
+	-webkit-appearance: none;
+	appearance: none;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: #0284c7;
+	border: 3px solid #ffffff;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+	margin-top: -8px;
+	transition: transform 0.15s ease, background 0.15s ease;
+}
+
+.rating-group input[type="range"]::-webkit-slider-thumb:hover {
+	transform: scale(1.15);
+	background: #0369a1;
+}
+
+.rating-group input[type="range"]::-moz-range-track {
+	height: 8px;
+	border-radius: 999px;
+	background: #cbd5e1;
+}
+
+.rating-group input[type="range"]::-moz-range-thumb {
+	width: 22px;
+	height: 22px;
+	border-radius: 50%;
+	background: #0284c7;
+	border: 3px solid #ffffff;
+	box-shadow: 0 2px 6px rgba(0, 0, 0, 0.35);
+	cursor: pointer;
+}
+
+.rating-markers {
 	display: flex;
 	justify-content: space-between;
-	font-size: 0.83em;
-	color: #64748b;
+	align-items: flex-start;
+	width: 100%;
+	margin-top: 0.35rem;
+}
+
+.rating-markers .marker {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	text-align: center;
+	color: #334155;
+	font-size: 0.85em;
+	width: 54px;
+}
+
+.rating-markers .marker-num {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background: #f1f5f9;
+	color: #0f172a;
+	font-weight: 700;
+	font-size: 0.92em;
+	border: 1.5px solid #64748b;
+	margin-bottom: 0.25rem;
+}
+
+.rating-markers .marker-text {
+	font-size: 0.82em;
+	color: #475569;
+	line-height: 1.15;
 }
 
 .consent-label {
-	display: block;
-	margin: 0.4rem 0 1.15rem;
+	display: flex;
+	align-items: flex-start;
+	gap: 0.65rem;
+	margin: 0.6rem 0 1.25rem;
 	line-height: 1.45;
+	font-weight: 400;
+	color: #475569;
+	cursor: pointer;
+	user-select: none;
+}
+
+.consent-label input[type="checkbox"] {
+	width: 1.2rem;
+	height: 1.2rem;
+	margin-top: 0.2rem;
+	flex-shrink: 0;
 }
 
 .survey-button {
