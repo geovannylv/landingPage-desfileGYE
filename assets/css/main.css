@@ -2012,6 +2012,214 @@ section:last-child,
 	color: #ffffff;
 }
 
+/* Formulario de participación */
+
+.participa-section {
+	padding: 70px 0;
+	background: linear-gradient(135deg, #075985 0%, #0284c7 52%, #0ea5e9 100%);
+	color: #ffffff;
+}
+
+.participa-intro {
+	padding: 1rem 2.5rem 1rem 0;
+}
+
+.eyebrow {
+	display: inline-block;
+	margin: 0 0 0.9rem;
+	padding: 0.35rem 0.8rem;
+	border: 1px solid rgba(255, 255, 255, 0.45);
+	border-radius: 999px;
+	font-size: 0.78em;
+	font-weight: 700;
+	letter-spacing: 0.12em;
+	text-transform: uppercase;
+}
+
+.participa-intro h2 {
+	margin-bottom: 0.45em;
+	color: #ffffff;
+	font-size: 2.7em;
+	line-height: 1.12;
+}
+
+.participa-intro > p:not(.eyebrow) {
+	font-size: 1.2em;
+	line-height: 1.65;
+	color: #e0f2fe;
+}
+
+.participa-list {
+	margin: 1.7rem 0 0;
+	padding: 0;
+	list-style: none;
+}
+
+.participa-list li {
+	position: relative;
+	margin: 0.75rem 0;
+	padding-left: 1.8rem;
+	line-height: 1.45;
+}
+
+.participa-list li::before {
+	content: "✓";
+	position: absolute;
+	left: 0;
+	color: #bae6fd;
+	font-weight: 700;
+}
+
+.survey-form {
+	padding: 2rem;
+	border-radius: 14px;
+	background: #ffffff;
+	box-shadow: 0 22px 44px rgba(3, 37, 65, 0.28);
+	color: #1e293b;
+}
+
+.survey-form fieldset {
+	border: 0;
+}
+
+.survey-form legend {
+	margin-bottom: 1.35rem;
+	font-size: 1.55em;
+	font-weight: 700;
+	line-height: 1.2;
+	color: #0f172a;
+}
+
+.form-grid {
+	display: grid;
+	grid-template-columns: repeat(2, minmax(0, 1fr));
+	gap: 1rem;
+}
+
+.field-group {
+	margin-bottom: 1.15rem;
+}
+
+.field-group label,
+.field-label {
+	display: block;
+	margin-bottom: 0.45rem;
+	font-weight: 700;
+	line-height: 1.35;
+	color: #334155;
+}
+
+.survey-form select,
+.survey-form textarea {
+	box-sizing: border-box;
+	width: 100%;
+	border: 1px solid #cbd5e1;
+	border-radius: 7px;
+	background: #f8fafc;
+	padding: 0.75rem 0.85rem;
+	font: inherit;
+	color: #0f172a;
+}
+
+.survey-form textarea {
+	resize: vertical;
+}
+
+.survey-form select:focus,
+.survey-form textarea:focus,
+.survey-form input:focus-visible,
+.survey-button:focus-visible {
+	outline: 3px solid rgba(14, 165, 233, 0.42);
+	outline-offset: 2px;
+	border-color: #0284c7;
+}
+
+.radio-group {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 0.6rem 1.15rem;
+}
+
+.radio-group .field-label {
+	width: 100%;
+	margin-bottom: 0;
+}
+
+.radio-group label,
+.consent-label {
+	margin: 0;
+	font-weight: 400;
+	color: #475569;
+}
+
+.radio-group input,
+.consent-label input {
+	margin-right: 0.35rem;
+	accent-color: #0284c7;
+}
+
+.rating-group output {
+	display: inline-block;
+	min-width: 1.45em;
+	border-radius: 999px;
+	background: #e0f2fe;
+	padding: 0.1rem 0.35rem;
+	text-align: center;
+	color: #0369a1;
+}
+
+.rating-group input[type="range"] {
+	width: 100%;
+	accent-color: #0284c7;
+}
+
+.range-labels {
+	display: flex;
+	justify-content: space-between;
+	font-size: 0.83em;
+	color: #64748b;
+}
+
+.consent-label {
+	display: block;
+	margin: 0.4rem 0 1.15rem;
+	line-height: 1.45;
+}
+
+.survey-button {
+	width: 100%;
+	border: 0;
+	border-radius: 7px;
+	padding: 0.9rem 1rem;
+	background: #0284c7;
+	color: #ffffff;
+	font: inherit;
+	font-weight: 700;
+	cursor: pointer;
+	transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.survey-button:hover {
+	background: #0369a1;
+	transform: translateY(-1px);
+}
+
+.required-note {
+	margin: 0.85rem 0 0;
+	font-size: 0.83em;
+	color: #64748b;
+}
+
+.form-message {
+	margin: 1rem 0 0;
+	border-radius: 8px;
+	background: #dcfce7;
+	padding: 1rem;
+	font-weight: 700;
+	line-height: 1.4;
+	color: #166534;
+}
+
 /* Content */
 
 #content {
@@ -2433,6 +2641,29 @@ section:last-child,
 
 	#content header {
 		margin: 0 0 1.25em 0;
+	}
+
+	/* Formulario */
+
+	.participa-section {
+		padding: 48px 0;
+	}
+
+	.participa-intro {
+		padding: 0 0 2rem;
+	}
+
+	.participa-intro h2 {
+		font-size: 2.15em;
+	}
+
+	.survey-form {
+		padding: 1.35rem;
+	}
+
+	.form-grid {
+		grid-template-columns: 1fr;
+		gap: 0;
 	}
 
 	/* Footer */

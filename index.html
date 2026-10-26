@@ -44,6 +44,7 @@
 							<a href="#carros-alegoricos">Carros alegóricos</a>
 							<a href="#video-desfile">Video</a>
 							<a href="#experiencias">Experiencias</a>
+							<a href="#participa">Participa</a>
 							<a href="#visitantes-contacto">Información y Contacto</a>
 						</nav>
 					</div>
@@ -351,6 +352,81 @@
 							</ul>
 						</article>
 
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- Formulario de participación -->
+		<section id="participa" class="participa-section" aria-labelledby="participa-title">
+			<div class="container">
+				<div class="row aln-center">
+					<div class="col-5 col-12-medium">
+						<div class="participa-intro">
+							<p class="eyebrow">Tu voz cuenta</p>
+							<h2 id="participa-title">Comparte tu experiencia del desfile</h2>
+							<p>
+								Esta encuesta académica recoge opiniones sobre la experiencia cultural del desfile.
+								No solicita nombres, teléfonos, correos ni otros datos que te identifiquen.
+							</p>
+							<ul class="participa-list">
+								<li>Preguntas cerradas para identificar tendencias.</li>
+								<li>Una pregunta abierta para conocer propuestas de mejora.</li>
+								<li>Participación voluntaria y respetuosa.</li>
+							</ul>
+						</div>
+					</div>
+					<div class="col-7 col-12-medium">
+						<form id="encuesta-desfile" class="survey-form">
+							<fieldset>
+								<legend>Cuéntanos sobre tu visita</legend>
+								<div class="form-grid">
+									<div class="field-group">
+										<label for="rango-edad">Rango de edad</label>
+										<select id="rango-edad" name="rango-edad" required>
+											<option value="">Selecciona una opción</option>
+											<option value="15-17">15 a 17 años</option>
+											<option value="18-25">18 a 25 años</option>
+											<option value="26-40">26 a 40 años</option>
+											<option value="41+">41 años o más</option>
+										</select>
+									</div>
+									<div class="field-group">
+										<label for="aspecto-principal">¿Qué fue lo que más valoraste?</label>
+										<select id="aspecto-principal" name="aspecto-principal" required>
+											<option value="">Elige un aspecto</option>
+											<option value="carrozas">Carrozas y creatividad</option>
+											<option value="musica">Música y comparsas</option>
+											<option value="familia">Ambiente familiar</option>
+											<option value="civismo">Identidad y civismo</option>
+										</select>
+									</div>
+								</div>
+
+								<div class="field-group radio-group">
+									<span class="field-label">¿Habías asistido antes al desfile? <span aria-hidden="true">*</span></span>
+									<label><input type="radio" name="visita-previa" value="si" required> Sí, he asistido antes</label>
+									<label><input type="radio" name="visita-previa" value="no"> No, fue mi primera vez</label>
+								</div>
+
+								<div class="field-group rating-group">
+									<label for="calificacion">¿Cómo calificarías la experiencia? <output id="valor-calificacion" for="calificacion">4</output>/5</label>
+									<input id="calificacion" name="calificacion" type="range" min="1" max="5" value="4">
+									<div class="range-labels" aria-hidden="true"><span>Por mejorar</span><span>Excelente</span></div>
+								</div>
+
+								<div class="field-group">
+									<label for="comentario">¿Qué mejorarías para una próxima edición?</label>
+									<textarea id="comentario" name="comentario" rows="4" minlength="12" required
+										placeholder="Escribe una sugerencia con al menos 12 caracteres."></textarea>
+								</div>
+
+								<label class="consent-label"><input type="checkbox" name="consentimiento" required> Entiendo que mi respuesta será usada solo con fines académicos y de forma anónima.</label>
+								<button type="submit" class="survey-button">Enviar mi opinión <span aria-hidden="true">→</span></button>
+								<p class="required-note"><span aria-hidden="true">*</span> Campos obligatorios</p>
+							</fieldset>
+						</form>
+						<p id="form-message" class="form-message" tabindex="-1" role="status" hidden>Formulario validado correctamente. Esta demostración no almacena respuestas ni datos personales.</p>
 					</div>
 				</div>
 			</div>

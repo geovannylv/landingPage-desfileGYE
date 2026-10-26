@@ -48,4 +48,29 @@
 					visibleClass: 'navPanel-visible'
 				});
 
+	// Encuesta: mantiene la interacción dentro del sitio estático.
+	var $survey = $('#encuesta-desfile'),
+		$rating = $('#calificacion'),
+		$ratingValue = $('#valor-calificacion'),
+		$formMessage = $('#form-message');
+
+	if ($survey.length) {
+		$rating.on('input change', function() {
+			$ratingValue.text(this.value);
+		});
+
+		$survey.on('submit', function(event) {
+			event.preventDefault();
+
+			if (!this.checkValidity()) {
+				this.reportValidity();
+				return;
+			}
+
+			this.reset();
+			$ratingValue.text('4');
+			$formMessage.prop('hidden', false).focus();
+		});
+	}
+
 })(jQuery);
